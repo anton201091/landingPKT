@@ -26,15 +26,15 @@
     .links{display:flex;gap:23px;color:var(--muted);font-size:14px}.links a:hover{color:var(--text)}
     .navcta,.btn{border:1px solid var(--line);border-radius:999px;padding:11px 17px;font-weight:700;font-size:14px;transition:.2s}
     .navcta:hover,.btn.secondary:hover{border-color:rgba(255,255,255,.25);transform:translateY(-1px)}
-    .hero{padding:92px 0 68px}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 11px;border:1px solid var(--line);border-radius:999px;
-      color:#c7d2e4;background:rgba(255,255,255,.025);font-size:13px}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px var(--accent)}
-    h1{font-size:clamp(44px,7.6vw,92px);line-height:.97;letter-spacing:-.065em;margin:24px 0 26px;max-width:1000px}
+    .hero{padding:92px 0 68px}
+    h1{font-size:clamp(44px,7.6vw,92px);line-height:1.02;letter-spacing:-.04em;margin:0 0 28px;max-width:1080px}
     .grad{background:linear-gradient(92deg,#fff 0%,#dce9ff 44%,#9ae9df 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .lead{font-size:clamp(18px,2.1vw,24px);color:#b8c3d4;max-width:800px;margin:0 0 34px}
+    .lead{font-size:clamp(18px,2.1vw,24px);color:#b8c3d4;max-width:920px;margin:0 0 34px}
     .heroactions{display:flex;flex-wrap:wrap;gap:12px}.btn{padding:14px 20px}.btn.primary{background:var(--text);color:#0a0d14;border-color:transparent}.btn.primary:hover{transform:translateY(-2px);box-shadow:0 14px 38px rgba(255,255,255,.12)}
     .btn.secondary{background:rgba(255,255,255,.035)}
     .herofoot{display:flex;gap:26px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-top:35px}.herofoot span:before{content:"•";color:var(--accent);margin-right:8px}
     .product{margin:28px auto 0;position:relative}.glow{position:absolute;inset:10% 12%;background:linear-gradient(90deg,rgba(138,180,255,.18),rgba(129,230,217,.16));filter:blur(80px);z-index:-1}
+    .demo-note{margin:13px 4px 0;color:#6f7d91;font-size:12px;line-height:1.5}
     .screen{border:1px solid rgba(255,255,255,.13);border-radius:26px;background:#0c111b;box-shadow:var(--shadow);overflow:hidden}
     .screenbar{height:46px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:7px;padding:0 17px}.screenbar i{display:block;width:9px;height:9px;border-radius:50%;background:#30394a}
     .app{display:grid;grid-template-columns:210px 1fr;min-height:520px}.side{border-right:1px solid var(--line);padding:22px 14px;background:#0a0f18}
@@ -44,20 +44,21 @@
     .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric,.card{border:1px solid var(--line);background:#101724;border-radius:15px;padding:16px}.metric small,.card small{color:#758298}.metric strong{display:block;font-size:24px;margin-top:5px}
     .dashboard{display:grid;grid-template-columns:1.35fr .65fr;gap:12px;margin-top:12px}.card h3{font-size:14px;margin:0 0 15px}.lineitem{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid rgba(255,255,255,.055);font-size:12px;color:#9ba7ba}.lineitem:first-of-type{border-top:0}
     .ico{width:28px;height:28px;border-radius:8px;background:rgba(138,180,255,.09);display:grid;place-items:center;color:#a8c7ff}.pill{margin-left:auto;padding:4px 7px;border-radius:999px;background:rgba(255,255,255,.045);font-size:10px}
-    section{padding:92px 0}.kicker{color:var(--accent);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.14em}.sectitle{font-size:clamp(32px,5vw,56px);line-height:1.05;letter-spacing:-.045em;margin:11px 0 18px;max-width:900px}.secintro{color:var(--muted);font-size:18px;max-width:760px}
-    .problems{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}.problem{border-top:1px solid var(--line);padding:20px 2px}.problem b{font-size:16px}.problem p{font-size:14px;color:var(--muted);margin:8px 0 0}
-    .statement{margin-top:44px;border:1px solid var(--line);border-radius:var(--r);padding:32px;background:linear-gradient(135deg,rgba(138,180,255,.075),rgba(129,230,217,.045));font-size:clamp(22px,3vw,34px);letter-spacing:-.03em}
+    section{padding:92px 0}.kicker{color:var(--accent);font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.14em}.problem-kicker{font-size:15px}.sectitle{font-size:clamp(32px,5vw,56px);line-height:1.05;letter-spacing:-.045em;margin:11px 0 18px;max-width:900px}.secintro{color:var(--muted);font-size:18px;max-width:820px}
+    .problems{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:40px}.problem{border-top:1px solid var(--line);padding:20px 2px}.problem b{font-size:16px}.problem p{font-size:14px;color:var(--muted);margin:8px 0 0}
+    .statement{margin-top:58px;border:1px solid var(--line);border-radius:var(--r);padding:38px 36px;background:linear-gradient(135deg,rgba(138,180,255,.075),rgba(129,230,217,.045));font-size:clamp(20px,2.45vw,30px);line-height:1.35;letter-spacing:-.02em}
     .passport{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:start;margin-top:38px}.passportcopy{position:sticky;top:105px}.passportcopy p{color:var(--muted)}
     .tree{border:1px solid var(--line);border-radius:var(--r);padding:22px;background:var(--panel)}.root{padding:17px 18px;border-radius:14px;background:linear-gradient(90deg,rgba(138,180,255,.13),rgba(129,230,217,.1));font-weight:800}
     .branches{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}.branch{border:1px solid var(--line);border-radius:13px;padding:14px;background:#0d131f}.branch small{display:block;color:var(--muted);margin-top:3px}
     .flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:36px}.step{min-height:150px;border:1px solid var(--line);border-radius:17px;padding:16px;background:var(--panel);position:relative}.step em{font-style:normal;color:#657287;font-size:11px}.step b{display:block;margin-top:30px}.step p{font-size:12px;color:var(--muted);margin:7px 0 0}
     .modules{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:38px}.module{min-height:215px;border:1px solid var(--line);border-radius:var(--r);padding:23px;background:var(--panel);transition:.25s}.module:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.19)}
-    .module .num{color:#627086;font-size:12px}.module h3{font-size:21px;margin:42px 0 9px}.module p{font-size:14px;color:var(--muted);margin:0}
+    .module .num{color:#627086;font-size:12px}.module h3{font-size:21px;margin:42px 0 9px}.module p{font-size:14px;color:var(--muted);margin:0}.planned{display:block;color:var(--accent);font-size:11px;font-weight:700;margin-top:5px}
     .scenario{border:1px solid var(--line);border-radius:30px;padding:34px;background:#0d131f;margin-top:40px}.scenariohead{display:flex;justify-content:space-between;gap:20px;align-items:end}.scenariohead h3{font-size:28px;margin:0}.scenariohead span{color:var(--warm);font-size:13px}
     .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.event{border-top:1px solid var(--line);padding-top:16px}.event small{color:#667489}.event b{display:block;margin:8px 0;font-size:14px}.event p{color:var(--muted);font-size:13px;margin:0}
     .roles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}.role{padding:20px;border-left:1px solid var(--line)}.role b{display:block;margin-bottom:7px}.role span{color:var(--muted);font-size:13px}
     .compare{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:32px}.tool{padding:18px;border:1px solid var(--line);border-radius:16px;color:var(--muted);font-size:13px}.tool b{color:var(--text);display:block;margin-bottom:7px}.tool.full{background:linear-gradient(145deg,rgba(129,230,217,.09),rgba(138,180,255,.08));border-color:rgba(129,230,217,.2)}
-    .infra{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-top:38px}.diagram{border:1px solid var(--line);border-radius:var(--r);padding:25px;background:var(--panel)}.nodes{display:grid;grid-template-columns:1fr 70px 1fr;align-items:center;gap:10px}.node{padding:18px;border:1px solid var(--line);border-radius:15px;text-align:center}.arrow{text-align:center;color:#657287}.server{grid-column:1/-1;margin:12px auto 0;width:62%;background:rgba(129,230,217,.055)}
+    .infra{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-top:38px}.diagram{border:1px solid var(--line);border-radius:var(--r);padding:25px;background:var(--panel)}.nodes{display:grid;grid-template-columns:1fr 70px 1fr;align-items:center;gap:10px}.node{padding:18px;border:1px solid var(--line);border-radius:15px;text-align:center}.node small{display:block;color:#7f8ba0;margin-top:5px}.arrow{text-align:center;color:#657287}.server{grid-column:1/-1;margin:12px auto 0;width:62%;background:rgba(129,230,217,.055)}
+    .dualnodes{display:grid;grid-template-columns:1fr 1fr;gap:10px}.dualnodes .wide{grid-column:1/-1}.dualnodes .local{background:rgba(129,230,217,.055)}.dualnodes .cloud{background:rgba(138,180,255,.06)}.sync{grid-column:1/-1;text-align:center;color:#728099;font-size:12px;padding:3px 0}
     .checklist{display:grid;gap:10px}.check{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--line);color:#c7d2e4}.check i{font-style:normal;color:var(--accent)}
     .stagegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:36px}.stage{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}.stage .ok{color:var(--accent)}.stage b{display:block;margin:18px 0 6px}.stage p{font-size:13px;color:var(--muted);margin:0}
     .cta{padding:65px;border:1px solid rgba(255,255,255,.12);border-radius:32px;background:
@@ -66,7 +67,7 @@
     .cta h2{font-size:clamp(36px,5vw,62px);line-height:1;letter-spacing:-.05em;margin:0 0 18px;max-width:850px}.cta p{color:#b7c3d5;max-width:700px;font-size:18px}
     footer{padding:42px 0 60px;color:#778398;font-size:13px}.foot{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;border-top:1px solid var(--line);padding-top:25px}.legal{max-width:650px}
     @media(max-width:900px){.links{display:none}.hero{padding-top:64px}.app{grid-template-columns:1fr}.side{display:none}.dashboard,.passport,.infra{grid-template-columns:1fr}.passportcopy{position:static}.flow{grid-template-columns:repeat(3,1fr)}.modules{grid-template-columns:repeat(2,1fr)}.problems,.roles,.compare,.stagegrid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:620px){.wrap{width:min(calc(100% - 24px),var(--max))}.navin{height:64px}.navcta{display:none}h1{font-size:48px}.hero{padding:48px 0 40px}.screen{border-radius:18px}.main{padding:18px}.grid3{grid-template-columns:1fr}.dashboard{grid-template-columns:1fr}.flow,.modules,.problems,.roles,.compare,.stagegrid,.timeline,.branches{grid-template-columns:1fr}.step{min-height:120px}.scenario,.cta{padding:24px}.scenariohead{align-items:start;flex-direction:column}.nodes{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.server{width:100%}.foot{align-items:start;flex-direction:column}}
+    @media(max-width:620px){.wrap{width:min(calc(100% - 24px),var(--max))}.navin{height:64px}.navcta{display:none}h1{font-size:46px;letter-spacing:-.025em;line-height:1.04}.hero{padding:48px 0 40px}.screen{border-radius:18px}.main{padding:18px}.grid3{grid-template-columns:1fr}.dashboard{grid-template-columns:1fr}.flow,.modules,.problems,.roles,.compare,.stagegrid,.timeline,.branches{grid-template-columns:1fr}.step{min-height:120px}.scenario,.cta{padding:24px}.scenariohead{align-items:start;flex-direction:column}.nodes{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.server{width:100%}.foot{align-items:start;flex-direction:column}}
   </style>
 </head>
 <body>
@@ -78,11 +79,10 @@
 
 <main id="top">
 <section class="hero"><div class="wrap">
-  <span class="eyebrow"><i class="dot"></i> цифровая производственная среда для театра</span>
   <h1><span class="grad">Спектакль как управляемая система.</span></h1>
-  <p class="lead">ПКТ объединяет создание, выпуск и эксплуатацию спектакля в едином цифровом контуре — от репетиционного изменения до объекта в цехе и места хранения.</p>
+  <p class="lead">ПКТ — цифровая производственная среда для театра, объединяющая создание, выпуск и эксплуатацию спектакля в едином цифровом контуре — от репетиционного изменения до объекта в цехе и места хранения.</p>
   <div class="heroactions"><a class="btn primary" href="#idea">Посмотреть принцип работы</a><a class="btn secondary" href="#status">Стадия проекта</a></div>
-  <div class="herofoot"><span>Паспорт спектакля</span><span>Банк объектов</span><span>Цеха и хранение</span><span>Единый календарь</span></div>
+  <div class="herofoot"><span>Паспорт спектакля</span><span>Банк объектов</span><span>Управление производством</span><span>Цеха и хранение</span><span>Единый календарь</span><span>Партитура</span></div>
 
   <div class="product" aria-label="Концептуальный экран ПКТ">
     <div class="glow"></div><div class="screen"><div class="screenbar"><i></i><i></i><i></i></div>
@@ -99,20 +99,22 @@
         </div></div>
       </div></div>
     </div>
+    <p class="demo-note">Демонстрационный интерфейс. Публичная версия показывает принцип продукта, не раскрывая внутреннюю реализацию.</p>
   </div>
 </div></section>
 
 <section id="problem"><div class="wrap">
-  <div class="kicker">Проблема</div><h2 class="sectitle">Производственная память спектакля часто существует в разрозненных местах.</h2>
-  <p class="secintro">Таблицы, чаты, фотографии, бумажные журналы и знания отдельных сотрудников решают локальные задачи, но не складываются в единую модель спектакля.</p>
-  <div class="problems"><div class="problem"><b>Данные расходятся</b><p>У разных подразделений могут оставаться разные версии одной и той же информации.</p></div><div class="problem"><b>Изменения теряются</b><p>Решение на репетиции не всегда превращается в зафиксированную производственную задачу.</p></div><div class="problem"><b>Знания зависят от людей</b><p>При смене сотрудника часть контекста приходится восстанавливать вручную.</p></div><div class="problem"><b>Эксплуатация отделена от выпуска</b><p>После премьеры система производства часто распадается на отдельные списки и журналы.</p></div></div>
+  <div class="kicker problem-kicker">Проблема</div><h2 class="sectitle">Производственная память спектакля часто существует в разрозненных местах.</h2>
+  <p class="secintro">Таблицы, чаты, фотографии, бумажные журналы и знания отдельных сотрудников решают локальные задачи, но не складываются в единую модель спектакля. К этому добавляется конкуренция за сцену: репетиции, показы и технические работы нередко планируются разными службами и сталкиваются уже после того, как решения приняты.</p>
+  <div class="problems"><div class="problem"><b>Данные расходятся</b><p>У разных подразделений могут оставаться разные версии одной и той же информации.</p></div><div class="problem"><b>Изменения теряются</b><p>Решение на репетиции не всегда превращается в зафиксированную производственную задачу.</p></div><div class="problem"><b>Знания зависят от людей</b><p>При смене сотрудника часть контекста приходится восстанавливать вручную.</p></div><div class="problem"><b>Эксплуатация отделена от выпуска</b><p>После премьеры система производства часто распадается на отдельные списки и журналы.</p></div><div class="problem"><b>Сцена конфликтует по времени</b><p>Репетиции, показы и технические работы конкурируют за одно пространство, а планы разных служб не всегда сверяются между собой.</p></div></div>
   <div class="statement">ПКТ рассматривает спектакль не как папку с документами, а как <strong>живую производственную структуру</strong>, которая развивается от репетиций до каждого последующего показа.</div>
 </div></section>
 
 <section id="idea"><div class="wrap">
   <div class="kicker">Центральная идея</div><h2 class="sectitle">Паспорт спектакля — цифровое ядро постановки.</h2>
-  <div class="passport"><div class="passportcopy"><p>Паспорт связывает художественный замысел с производством и эксплуатацией. В нём предмет существует не отдельно, а в контексте спектакля: кому принадлежит, где используется, кто отвечает, где хранится и что с ним происходило.</p><p>Публичная версия показывает принцип продукта, но намеренно не раскрывает внутреннюю модель данных, алгоритмы и рабочую архитектуру.</p></div>
+  <div class="passport"><div class="passportcopy"><p>Паспорт связывает художественный замысел с производством и эксплуатацией. В нём предмет существует не отдельно, а в контексте спектакля: кому принадлежит, где используется, кто отвечает, где хранится и что с ним происходило.</p></div>
   <div class="tree"><div class="root">Спектакль → единый цифровой паспорт</div><div class="branches">
+    <div class="branch"><b>Планирование временных рамок</b><small>рамки постановочного процесса и подготовки спектакля</small></div><div class="branch"><b>Партитура</b><small>связь хода спектакля с техническими и производственными событиями</small></div>
     <div class="branch"><b>Персонажи и сцены</b><small>контекст использования объектов</small></div><div class="branch"><b>Костюмы</b><small>комплекты и элементы</small></div>
     <div class="branch"><b>Реквизит</b><small>объекты и состояние</small></div><div class="branch"><b>Декорации</b><small>состав и эксплуатация</small></div>
     <div class="branch"><b>Хранение</b><small>актуальное физическое местоположение</small></div><div class="branch"><b>История</b><small>изменения и производственный контекст</small></div>
@@ -131,7 +133,7 @@
 
 <section id="modules"><div class="wrap">
   <div class="kicker">Возможности</div><h2 class="sectitle">Не ещё одна таблица. Система связанного производственного контекста.</h2>
-  <div class="modules"><article class="module"><span class="num">01</span><h3>Паспорт спектакля</h3><p>Цифровая структура постановки, которая сопровождает её создание, выпуск и эксплуатацию.</p></article><article class="module"><span class="num">02</span><h3>Банк объектов</h3><p>Костюмы, реквизит, декорации и другие производственные сущности в едином контуре.</p></article><article class="module"><span class="num">03</span><h3>Производство</h3><p>Работа подразделений с актуальными объектами и изменениями без дублирования контекста.</p></article><article class="module"><span class="num">04</span><h3>Хранение</h3><p>Привязка объектов к физической структуре хранения конкретного театра.</p></article><article class="module"><span class="num">05</span><h3>Календарь</h3><p>Единая точка планирования, где производственный и сценический контекст не расходятся.</p></article><article class="module"><span class="num">06</span><h3>История изменений</h3><p>Спектакль развивается, а система сохраняет последовательность значимых изменений.</p></article></div>
+  <div class="modules"><article class="module"><span class="num">01</span><h3>Паспорт спектакля</h3><p>Цифровая структура постановки, которая сопровождает её создание, выпуск и эксплуатацию.</p></article><article class="module"><span class="num">02</span><h3>Банк объектов</h3><p>Костюмы, реквизит, декорации и другие производственные сущности в едином контуре.</p></article><article class="module"><span class="num">03</span><h3>Производство</h3><p>Работа подразделений с актуальными объектами и изменениями без дублирования контекста.</p></article><article class="module"><span class="num">04</span><h3>Хранение</h3><p>Привязка объектов к физической структуре хранения конкретного театра.</p></article><article class="module"><span class="num">05</span><h3>Календарь</h3><p>Единая точка планирования, где производственный и сценический контекст не расходятся.</p></article><article class="module"><span class="num">06</span><h3>Партитура <span class="planned">в развитии</span></h3><p>Единая последовательность сценических, технических и производственных событий спектакля.</p></article><article class="module"><span class="num">07</span><h3>История изменений</h3><p>Спектакль развивается, а система сохраняет последовательность значимых изменений.</p></article></div>
 </div></section>
 
 <section id="roles"><div class="wrap">
@@ -141,27 +143,27 @@
 </div></section>
 
 <section id="difference"><div class="wrap">
-  <div class="kicker">Почему отдельного инструмента недостаточно</div><h2 class="sectitle">Файл хранит файл. Таблица хранит строки. ПКТ хранит связи спектакля.</h2>
+  <div class="kicker">Инструменты</div><h2 class="sectitle">Файл хранит файл. Таблица хранит сроки. ПКТ хранит взаимосвязи спектакля.</h2>
   <div class="compare"><div class="tool"><b>Таблица</b>Удобна для списков, но плохо описывает живые связи и историю объекта.</div><div class="tool"><b>Облачный диск</b>Хранит документы и фотографии, но не производственную модель постановки.</div><div class="tool"><b>Мессенджер</b>Быстро передаёт сообщения, но контекст растворяется в переписке.</div><div class="tool full"><b>ПКТ</b>Связывает объект, сцену, роль, подразделение, состояние, хранение и изменение в одном контуре.</div></div>
 </div></section>
 
 <section id="infra"><div class="wrap">
-  <div class="kicker">Среда эксплуатации</div><h2 class="sectitle">Рассчитано на реальную инфраструктуру театра.</h2>
-  <div class="infra"><div><p class="secintro">В концепции ПКТ предусмотрен локальный контур внутри театра: рабочие места и мобильные устройства обращаются к системе по локальной сети. Это позволяет строить процесс вокруг театра, а не вокруг качества внешнего интернета.</p>
-    <div class="checklist"><div class="check"><i>✓</i><span>Мобильный приоритет для цехов и сотрудников на площадке</span></div><div class="check"><i>✓</i><span>Десктопный интерфейс для управленческих ролей</span></div><div class="check"><i>✓</i><span>Возможность локального серверного контура в театре</span></div></div>
-  </div><div class="diagram"><div class="nodes"><div class="node">Телефоны цехов</div><div class="arrow">↔</div><div class="node">Рабочие компьютеры</div><div class="node server">Локальный сервер театра<br><small style="color:#7f8ba0">ПКТ внутри сети</small></div></div></div></div>
+  <div class="kicker">Среда эксплуатации</div><h2 class="sectitle">Два контура — одна система.</h2>
+  <div class="infra"><div><p class="secintro">ПКТ проектируется как двухконтурная система. Полный рабочий архив и тяжёлые материалы остаются на локальном сервере театра, а облегчённый облачный контур синхронизирует основную информацию для удалённого доступа. При потере интернета локальная работа не останавливается; после восстановления связи синхронизация продолжается.</p>
+    <div class="checklist"><div class="check"><i>✓</i><span>Локальный контур работает внутри театра независимо от внешнего интернета</span></div><div class="check"><i>✓</i><span>Тяжёлые исходные материалы и архив остаются на сервере театра</span></div><div class="check"><i>✓</i><span>Облачный контур даёт удалённый доступ к основной информации</span></div><div class="check"><i>✓</i><span>После восстановления связи контуры синхронизируются</span></div></div>
+  </div><div class="diagram"><div class="dualnodes"><div class="node">Телефоны цехов</div><div class="node">Рабочие компьютеры</div><div class="node local wide"><b>Локальный сервер театра</b><small>полные данные, архив и тяжёлые файлы</small></div><div class="sync">⇅ синхронизация ⇅</div><div class="node cloud wide"><b>Облачный контур</b><small>облегчённая синхронизированная версия</small></div></div></div></div>
 </div></section>
 
 <section id="status"><div class="wrap">
   <div class="kicker">Стадия проекта</div><h2 class="sectitle">От идеи — к рабочему прототипу и пилотированию.</h2>
-  <p class="secintro">Проект развивается как прикладная система для реального театрального производства. Публичная страница сознательно не содержит исходный код и внутренние технические детали.</p>
+  <p class="secintro">Проект развивается как прикладная система для реального театрального производства.</p>
   <div class="stagegrid"><div class="stage"><span class="ok">✓</span><b>Исследование процессов</b><p>Собраны основные роли, объекты и рабочие сценарии театрального производства.</p></div><div class="stage"><span class="ok">✓</span><b>Архитектура продукта</b><p>Определены ядро системы и связи ключевых производственных сущностей.</p></div><div class="stage"><span class="ok">✓</span><b>Рабочий прототип</b><p>Развивается действующая версия с основными пользовательскими сценариями.</p></div><div class="stage"><span>→</span><b>Пилот</b><p>Следующий этап — проверка системы в условиях одного или нескольких театров.</p></div></div>
 </div></section>
 
 <section id="contact"><div class="wrap"><div class="cta">
   <h2>ПКТ сохраняет не документы о спектакле, а его производственную память.</h2>
   <p>Проект открыт к пилотированию, партнёрству и профессиональной экспертизе со стороны театров, производственных служб и профильных программ поддержки.</p>
-  <div class="heroactions"><a class="btn primary" href="https://github.com/anton201091" rel="noopener">Связаться с автором через GitHub</a><a class="btn secondary" href="#top">Вернуться к началу</a></div>
+  <div class="heroactions"><a class="btn primary" href="mailto:a.s.blednykh@mail.ru">Связаться с автором</a><a class="btn secondary" href="#top">Вернуться к началу</a></div>
 </div></div></section>
 </main>
 
