@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Калькулятор коробки — быстрый расчёт</title>
+<meta name="description" content="Калькулятор заготовки коробки из гофрокартона: ширина, высота и толщина. Автоматический расчёт размеров листа.">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#eef2f5;color:#162434;font-family:Arial,Helvetica,sans-serif}
+main{max-width:670px;margin:0 auto;padding:24px 15px 35px}
+h1{margin:0 0 10px;font-size:29px}
+p{line-height:1.45}
+.card{background:#fff;padding:22px;border:1px solid #d1dbe3;border-radius:14px}
+.inputs{display:flex;gap:12px}
+.field{min-width:0;flex:1}
+label{font-size:14px;font-weight:700;display:block;margin-bottom:7px}
+input{width:100%;font-size:26px;font-weight:700;padding:11px 9px;border:2px solid #c8d6e0;border-radius:8px;background:#fff;color:#162434}
+input:focus{outline:2px solid #2679c9;outline-offset:1px}
+.result{background:#e9f3ff;padding:24px 19px;margin-top:22px;border:1px solid #c4dcf7;border-radius:12px}
+.eyebrow{text-transform:uppercase;letter-spacing:1px;color:#315b80;font-weight:700;font-size:13px}
+.big{font-size:52px;font-weight:800;line-height:1.2;margin:9px 0 16px;overflow-wrap:anywhere}
+.big small{font-size:21px;color:#376080;font-weight:500}
+.formula{margin:12px 0 0;padding-top:13px;border-top:1px solid #cbdcf0;line-height:1.5;font-size:17px}
+.formula strong{display:block;font-size:14px}
+.warning{padding:13px 15px;margin:0 0 17px;color:#7b3100;background:#fff0d3;border:1px solid #f2cb83;border-radius:10px;font-size:15px;line-height:1.5}
+.error{font-weight:700;color:#bd2828;margin:12px 0 0}
+button{margin-top:18px;background:white;color:#193a53;border:1px solid #a9bfcd;border-radius:8px;padding:13px 18px;font-size:16px;cursor:pointer;min-height:44px}
+@media(max-width:440px){main{padding:18px 12px 28px}h1{font-size:26px}.card{padding:15px}.inputs{gap:8px}label{font-size:12px}input{font-size:22px;padding:11px 7px}.big{font-size:39px}}
+@media(max-width:330px){.inputs{flex-direction:column}label{font-size:14px}}
+</style>
+</head>
+<body>
+<main>
+<h1>Калькулятор коробки</h1>
+<p>Введи размеры готовой коробки в сантиметрах. Размер листа рассчитывается автоматически.</p>
+<div id="jsWarning" class="warning">В этом браузере автоматический расчёт не работает: JavaScript отключён или не поддерживается. Открой страницу в современном браузере.</div>
+<div class="card">
+<div class="inputs">
+<div class="field"><label for="width">Ширина (см)</label><input id="width" type="text" inputmode="decimal" autocomplete="off" value="53"></div>
+<div class="field"><label for="height">Высота (см)</label><input id="height" type="text" inputmode="decimal" autocomplete="off" value="44"></div>
+<div class="field"><label for="thickness">Толщина (см)</label><input id="thickness" type="text" inputmode="decimal" autocomplete="off" value="4"></div>
+</div>
+<div class="error" id="error" aria-live="polite"></div>
+<div class="result" aria-live="polite">
+<div class="eyebrow">Размер листа гофрокартона</div>
+<div class="big"><span id="sheetWidth">61</span> × <span id="sheetLength">100</span> <small>см</small></div>
+<div class="formula"><strong>Поперёк</strong><span id="formulaWidth">4 + 53 + 4 = 61 см</span></div>
+<div class="formula"><strong>Вдоль</strong><span id="formulaLength">4 + 44 + 4 + 44 + 4 = 100 см</span></div>
+</div>
+<button id="reset" type="button">Новый расчёт</button>
+</div>
+</main>
+<script>
+(function(){
+function el(id){return document.getElementById(id)}
+function toNumber(value){var s=String(value).replace(/\s/g,'').replace(',','.');if(!s||!/^\d+(\.\d+)?$/.test(s))return null;var n=Number(s);if(!isFinite(n)||n<=0||n>100000)return null;return n}
+function fmt(n){return String(Math.round((n+0.00000001)*1000)/1000).replace('.',',')}
+function calculate(){
+var w=toNumber(el('width').value),h=toNumber(el('height').value),t=toNumber(el('thickness').value);
+if(w===null||h===null||t===null){el('sheetWidth').textContent='—';el('sheetLength').textContent='—';el('formulaWidth').textContent='Введите три размера';el('formulaLength').textContent='Введите три размера';el('error').textContent='Нужны три положительных числа.';return}
+var sw=w+2*t,sl=2*h+3*t;
+el('sheetWidth').textContent=fmt(sw);
+el('sheetLength').textContent=fmt(sl);
+el('formulaWidth').textContent=fmt(t)+' + '+fmt(w)+' + '+fmt(t)+' = '+fmt(sw)+' см';
+el('formulaLength').textContent=fmt(t)+' + '+fmt(h)+' + '+fmt(t)+' + '+fmt(h)+' + '+fmt(t)+' = '+fmt(sl)+' см';
+el('error').textContent=''
+}
+function listen(node,event,handler){if(node.addEventListener)node.addEventListener(event,handler,false);else if(node.attachEvent)node.attachEvent('on'+event,handler)}
+var fields=['width','height','thickness'];
+for(var i=0;i<fields.length;i++){var field=el(fields[i]);listen(field,'input',calculate);listen(field,'keyup',calculate);listen(field,'change',calculate)}
+listen(el('reset'),'click',function(){for(var j=0;j<fields.length;j++)el(fields[j]).value='';calculate();el('width').focus()});
+calculate();el('jsWarning').style.display='none'
+})();
+</script>
+</body>
+</html>
