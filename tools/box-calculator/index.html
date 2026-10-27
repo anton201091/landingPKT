@@ -26,6 +26,7 @@ input:focus{outline:2px solid #2679c9;outline-offset:1px}
 .warning{padding:13px 15px;margin:0 0 17px;color:#7b3100;background:#fff0d3;border:1px solid #f2cb83;border-radius:10px;font-size:15px;line-height:1.5}
 .error{font-weight:700;color:#bd2828;margin:12px 0 0}
 button{margin-top:18px;background:white;color:#193a53;border:1px solid #a9bfcd;border-radius:8px;padding:13px 18px;font-size:16px;cursor:pointer;min-height:44px}
+.swap-button{background:#eaf4ff;border-color:#8bb9e2;color:#153c5f;font-weight:700}
 @media(max-width:440px){main{padding:18px 12px 28px}h1{font-size:26px}.card{padding:15px}.inputs{gap:8px}label{font-size:12px}input{font-size:22px;padding:11px 7px}.big{font-size:39px}}
 @media(max-width:330px){.inputs{flex-direction:column}label{font-size:14px}}
 </style>
@@ -41,6 +42,7 @@ button{margin-top:18px;background:white;color:#193a53;border:1px solid #a9bfcd;b
 <div class="field"><label for="height">Высота (см)</label><input id="height" type="text" inputmode="decimal" autocomplete="off" value="44"></div>
 <div class="field"><label for="thickness">Толщина (см)</label><input id="thickness" type="text" inputmode="decimal" autocomplete="off" value="4"></div>
 </div>
+<button id="swap" class="swap-button" type="button" aria-label="Поменять ширину и высоту коробки местами">⇄ Поменять ширину и высоту</button>
 <div class="error" id="error" aria-live="polite"></div>
 <div class="result" aria-live="polite">
 <div class="eyebrow">Размер листа гофрокартона</div>
@@ -69,6 +71,7 @@ el('error').textContent=''
 function listen(node,event,handler){if(node.addEventListener)node.addEventListener(event,handler,false);else if(node.attachEvent)node.attachEvent('on'+event,handler)}
 var fields=['width','height','thickness'];
 for(var i=0;i<fields.length;i++){var field=el(fields[i]);listen(field,'input',calculate);listen(field,'keyup',calculate);listen(field,'change',calculate)}
+listen(el('swap'),'click',function(){var w=el('width').value;el('width').value=el('height').value;el('height').value=w;calculate()});
 listen(el('reset'),'click',function(){for(var j=0;j<fields.length;j++)el(fields[j]).value='';calculate();el('width').focus()});
 calculate();el('jsWarning').style.display='none'
 })();
