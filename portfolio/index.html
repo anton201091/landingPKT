@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0b">
+<title>Антон Бледных — сценография</title>
+<style>
+:root{--bg:#090909;--fg:#f4f1eb;--muted:#aaa7a0;--line:#2a2a2a;--accent:#d7ff49}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 34px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between;font-size:13px;letter-spacing:.08em;text-transform:uppercase}.nav .links{display:flex;gap:22px;color:var(--muted)}
+.hero{min-height:78vh;display:grid;align-content:end;padding:72px 0 54px;border-bottom:1px solid var(--line)}
+.kicker{font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+h1{font-size:clamp(58px,11vw,150px);line-height:.82;letter-spacing:-.065em;margin:0 0 28px;font-weight:700}
+.lead{font-size:clamp(20px,2.8vw,35px);line-height:1.12;max-width:850px;color:#d8d5cf;margin:0}
+.statement{padding:80px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 2fr;gap:40px}
+.statement h2,.project h2{margin:0}.statement p{font-size:clamp(25px,4vw,50px);line-height:1.05;letter-spacing:-.035em;margin:0}
+.section-label{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+.project{padding:80px 0 92px;border-bottom:1px solid var(--line)}
+.project-head{display:grid;grid-template-columns:1.55fr 1fr;gap:45px;margin-bottom:34px}
+.project h2{font-size:clamp(40px,7vw,86px);line-height:.92;letter-spacing:-.045em}
+.meta{display:flex;flex-direction:column;justify-content:flex-end;gap:12px;font-size:14px;color:var(--muted);line-height:1.5}
+.idea{font-size:clamp(19px,2.2vw,29px);color:var(--fg);max-width:620px}
+.gallery{display:grid;grid-template-columns:1.65fr 1fr;grid-template-rows:1fr 1fr;gap:10px;height:min(66vw,720px)}
+.gallery img{width:100%;height:100%;object-fit:cover;background:#151515;cursor:zoom-in;transition:filter .25s ease,transform .25s ease}
+.gallery img:first-child{grid-row:1/3}.gallery img:hover{filter:brightness(.9)}
+footer{padding:90px 0 100px}.foot-title{font-size:clamp(48px,8vw,105px);line-height:.88;letter-spacing:-.055em;margin:0 0 28px}
+.small{color:var(--muted);font-size:14px;line-height:1.6}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal img{max-width:96vw;max-height:94vh;object-fit:contain}.close{position:absolute;right:18px;top:14px;border:0;background:transparent;color:white;font-size:36px;cursor:pointer}
+@media(max-width:760px){.nav .links{display:none}.hero{min-height:70vh}.statement,.project-head{grid-template-columns:1fr}.statement{gap:22px}.project-head{gap:20px}.gallery{height:auto;grid-template-columns:1fr;grid-template-rows:auto}.gallery img,.gallery img:first-child{grid-row:auto;aspect-ratio:16/10}.project{padding:58px 0 68px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div>АНТОН БЛЕДНЫХ</div><div class="links"><a href="#works">работы</a><a href="#about">подход</a></div></div></header>
+
+<main>
+<section class="hero wrap">
+  <div class="kicker">Сценограф · художник-постановщик</div>
+  <h1>ПРОСТРАНСТВО<br>КАК ДЕЙСТВИЕ</h1>
+  <p class="lead">Избранные театральные работы. Сценография, в которой образ становится правилом спектакля — механизмом, маршрутом, пустотой, движением или общей материальной средой.</p>
+</section>
+
+<section class="statement wrap" id="about">
+  <div class="section-label">Авторский подход</div>
+  <p>Мне важно найти одно ясное сценическое правило и сделать так, чтобы весь спектакль начал существовать внутри него.</p>
+</section>
+
+<div id="works">
+<section class="project wrap">
+  <div class="project-head"><h2>Почтамт</h2><div class="meta"><div>2021 · Шадринский государственный драматический театр</div><div>Режиссёр — Антон Елисеев</div><div>Художник-постановщик — Антон Бледных</div><div class="idea">Конвейер и бумажные коробки становятся общей системой спектакля: люди проходят через неё так же, как вещи.</div></div></div>
+  <div class="gallery"><img src="images/pochtamt-1.jpg" alt="Почтамт"><img src="images/pochtamt-2.jpg" alt="Почтамт"><img src="images/pochtamt-3.jpg" alt="Почтамт"></div>
+</section>
+
+<section class="project wrap">
+  <div class="project-head"><h2>Подполье</h2><div class="meta"><div>2022 · Шадринский государственный драматический театр</div><div>Режиссёр — Антон Елисеев</div><div>Сценография — Антон Бледных</div><div class="idea">Манекены — воображаемое общество и судящие собеседники героя. Зеркала превращают пространство в систему самонаблюдения.</div></div></div>
+  <div class="gallery"><img src="images/podpolie-1.jpg" alt="Подполье"><img src="images/podpolie-2.jpg" alt="Подполье"><img src="images/podpolie-3.jpg" alt="Подполье"></div>
+</section>
+
+<section class="project wrap">
+  <div class="project-head"><h2>Таганок</h2><div class="meta"><div>2019 · студия «Арлекин», Салаватский башкирский драматический театр</div><div>Режиссёр — Радик Галиуллин</div><div>Сценография, соавторство инсценировки — Антон Бледных</div><div class="idea">Поворотный круг создаёт множество состояний одного пространства. Его движение становится частью драматургии взросления героев.</div></div></div>
+  <div class="gallery"><img src="images/taganok-1.jpg" alt="Таганок"><img src="images/taganok-2.jpg" alt="Таганок"><img src="images/taganok-3.jpg" alt="Таганок"></div>
+</section>
+
+<section class="project wrap">
+  <div class="project-head"><h2>Небесный тихоход</h2><div class="meta"><div>2023 · Шадринский драматический театр</div><div>Режиссёр — Александр Колмогоров</div><div>Сценография, костюмы, свет — Антон Бледных</div><div class="idea">Война показана через почти пустое пространство. Главный зрительный образ — сам ансамбль эскадрильи; ящики, полотна и маленький самолёт включаются в действие.</div></div></div>
+  <div class="gallery"><img src="images/nebesny-1.jpg" alt="Небесный тихоход"><img src="images/nebesny-2.jpg" alt="Небесный тихоход"><img src="images/nebesny-3.jpg" alt="Небесный тихоход"></div>
+</section>
+
+<section class="project wrap">
+  <div class="project-head"><h2>Радость нашего дома</h2><div class="meta"><div>2025 · Государственный Табасаранский драматический театр</div><div>Режиссёр — Лиана Нигматуллина</div><div>Сценография, костюмы, свет — Антон Бледных</div><div class="idea">Отдельные нити складываются в общее полотно. В кульминации материал перестаёт быть фоном и становится физическим действием героев.</div></div></div>
+  <div class="gallery"><img src="images/radost-1.jpg" alt="Радость нашего дома"><img src="images/radost-2.jpg" alt="Радость нашего дома"><img src="images/radost-3.jpg" alt="Радость нашего дома"></div>
+</section>
+
+<section class="project wrap">
+  <div class="project-head"><h2>Счастье моё</h2><div class="meta"><div>2024 · Шадринский государственный драматический театр</div><div>Режиссёр — Ильшат Мухутдинов</div><div>Сценография — Антон Бледных</div><div class="idea">Намеренно неуравновешенная предметная среда первого акта постепенно становится пространством, в котором уже возможно жить.</div></div></div>
+  <div class="gallery"><img src="images/schastie-1.jpg" alt="Счастье моё"><img src="images/schastie-2.jpg" alt="Счастье моё"><img src="images/schastie-3.jpg" alt="Счастье моё"></div>
+</section>
+
+<section class="project wrap">
+  <div class="project-head"><h2>Хайбуш</h2><div class="meta"><div>2026 · Башкирский драматический театр им. И. Юмагулова, Стерлитамак</div><div>Режиссёр — Фанис Каримов</div><div>Сценография, костюмы — Антон Бледных</div><div class="idea">Гротескный мир показного благополучия: яркая офисно-кабаретная среда и мебель, которая визуально кажется мягкой, но физически остаётся жёсткой.</div></div></div>
+  <div class="gallery"><img src="images/haibush-1.jpg" alt="Хайбуш"><img src="images/haibush-2.jpg" alt="Хайбуш"><img src="images/haibush-3.jpg" alt="Хайбуш"></div>
+</section>
+</div>
+
+<footer class="wrap">
+  <div class="section-label">Selected works · 2019–2026</div>
+  <p class="foot-title">АНТОН<br>БЛЕДНЫХ</p>
+  <div class="small">Сценограф · художник-постановщик · свет · медиа · театральное производство</div>
+</footer>
+</main>
+
+<div class="modal" id="modal"><button class="close" aria-label="Закрыть">×</button><img alt=""></div>
+<script>
+const modal=document.getElementById('modal'), mimg=modal.querySelector('img');
+document.querySelectorAll('.gallery img').forEach(img=>img.addEventListener('click',()=>{mimg.src=img.src;modal.classList.add('open')}));
+modal.addEventListener('click',e=>{if(e.target===modal||e.target.classList.contains('close'))modal.classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')modal.classList.remove('open')});
+</script>
+</body></html>
