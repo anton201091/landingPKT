@@ -1,101 +1,260 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="ru">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b0b0b">
-<title>Антон Бледных — сценография</title>
+<meta name="theme-color" content="#ece8df">
+<title>Антон Бледных — сценограф</title>
+<meta name="description" content="Антон Бледных — сценограф и художник-постановщик. Избранные театральные работы 2019–2026.">
 <style>
-:root{--bg:#090909;--fg:#f4f1eb;--muted:#aaa7a0;--line:#2a2a2a;--accent:#d7ff49}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,Arial,Helvetica,sans-serif}
-a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 34px));margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
-.nav{height:64px;display:flex;align-items:center;justify-content:space-between;font-size:13px;letter-spacing:.08em;text-transform:uppercase}.nav .links{display:flex;gap:22px;color:var(--muted)}
-.hero{min-height:78vh;display:grid;align-content:end;padding:72px 0 54px;border-bottom:1px solid var(--line)}
-.kicker{font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
-h1{font-size:clamp(58px,11vw,150px);line-height:.82;letter-spacing:-.065em;margin:0 0 28px;font-weight:700}
-.lead{font-size:clamp(20px,2.8vw,35px);line-height:1.12;max-width:850px;color:#d8d5cf;margin:0}
-.statement{padding:80px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 2fr;gap:40px}
-.statement h2,.project h2{margin:0}.statement p{font-size:clamp(25px,4vw,50px);line-height:1.05;letter-spacing:-.035em;margin:0}
-.section-label{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
-.project{padding:80px 0 92px;border-bottom:1px solid var(--line)}
-.project-head{display:grid;grid-template-columns:1.55fr 1fr;gap:45px;margin-bottom:34px}
-.project h2{font-size:clamp(40px,7vw,86px);line-height:.92;letter-spacing:-.045em}
-.meta{display:flex;flex-direction:column;justify-content:flex-end;gap:12px;font-size:14px;color:var(--muted);line-height:1.5}
-.idea{font-size:clamp(19px,2.2vw,29px);color:var(--fg);max-width:620px}
-.gallery{display:grid;grid-template-columns:1.65fr 1fr;grid-template-rows:1fr 1fr;gap:10px;height:min(66vw,720px)}
-.gallery img{width:100%;height:100%;object-fit:cover;background:#151515;cursor:zoom-in;transition:filter .25s ease,transform .25s ease}
-.gallery img:first-child{grid-row:1/3}.gallery img:hover{filter:brightness(.9)}
-footer{padding:90px 0 100px}.foot-title{font-size:clamp(48px,8vw,105px);line-height:.88;letter-spacing:-.055em;margin:0 0 28px}
-.small{color:var(--muted);font-size:14px;line-height:1.6}
-.modal{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal img{max-width:96vw;max-height:94vh;object-fit:contain}.close{position:absolute;right:18px;top:14px;border:0;background:transparent;color:white;font-size:36px;cursor:pointer}
-@media(max-width:760px){.nav .links{display:none}.hero{min-height:70vh}.statement,.project-head{grid-template-columns:1fr}.statement{gap:22px}.project-head{gap:20px}.gallery{height:auto;grid-template-columns:1fr;grid-template-rows:auto}.gallery img,.gallery img:first-child{grid-row:auto;aspect-ratio:16/10}.project{padding:58px 0 68px}}
+:root{
+  --paper:#ece8df;
+  --paper-2:#f6f3ed;
+  --paper-3:#ded8cd;
+  --ink:#22221f;
+  --muted:#6f6b63;
+  --line:#c9c2b6;
+  --accent:#8e3f31;
+  --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;overflow-x:hidden;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.shell{width:min(var(--max),calc(100% - 48px));margin-inline:auto}
+.eyebrow{font-size:11px;line-height:1.2;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.site-head{border-bottom:1px solid var(--line)}
+.site-head .shell{height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-size:14px;font-weight:650;letter-spacing:.02em}
+.nav{display:flex;gap:22px;font-size:12px;color:var(--muted)}
+.nav a:hover{color:var(--ink)}
+.hero{padding:76px 0 88px}
+.hero-grid>*{min-width:0}.hero-visual>*{min-width:0}.compare>*{min-width:0}.support>*{min-width:0}.hero-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:58px;align-items:end}
+h1{font-size:clamp(48px,7.1vw,100px);line-height:.92;letter-spacing:-.06em;margin:14px 0 26px;font-weight:650;max-width:760px}
+.hero-copy{font-size:clamp(18px,2vw,26px);line-height:1.25;max-width:650px;color:#3f3d38;margin:0}
+.hero-note{margin-top:34px;display:flex;gap:28px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+.hero-visual{display:grid;grid-template-columns:.78fr 1.22fr;gap:10px;align-items:end}
+.hero-visual figure{margin:0}
+.frame{background:var(--paper-2);border:1px solid var(--line);overflow:hidden}
+.frame img{width:100%;height:100%}
+.hero-visual .sketch .frame{aspect-ratio:4/5}
+.hero-visual .stage .frame{aspect-ratio:4/5}
+.hero-visual .sketch img{object-fit:contain;padding:14px;background:#e5e1d8}
+.hero-visual .stage img{object-fit:cover}
+figcaption{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.index{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:34px 0 36px}
+.index-grid{display:grid;grid-template-columns:210px 1fr;gap:42px}
+.index-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}
+.index-item{padding:10px 0;border-bottom:1px solid rgba(34,34,31,.12);display:flex;justify-content:space-between;gap:20px;font-size:14px}
+.index-item span:last-child{color:var(--muted)}
+.case{padding:94px 0 108px;border-bottom:1px solid var(--line)}
+.case:nth-of-type(even){background:rgba(255,255,255,.18)}
+.case-head{display:grid;grid-template-columns:74px minmax(0,1.4fr) minmax(260px,.65fr);gap:28px;align-items:start;margin-bottom:44px}
+.case-no{font-size:13px;letter-spacing:.12em;color:var(--accent);padding-top:12px}
+.case h2{font-size:clamp(42px,6.2vw,76px);line-height:.94;letter-spacing:-.05em;margin:0;font-weight:620;max-width:800px;overflow-wrap:anywhere}
+.meta{font-size:13px;line-height:1.55;color:var(--muted);padding-top:8px}
+.meta strong{color:var(--ink);font-weight:600}
+.case-copy{display:grid;grid-template-columns:74px repeat(2,minmax(0,1fr));gap:28px;margin-bottom:40px}
+.case-copy .label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:5px}
+.case-copy p{font-size:clamp(17px,1.65vw,22px);line-height:1.36;margin:0;max-width:500px}
+.case-copy p strong{font-weight:620}
+.compare{display:grid;grid-template-columns:.78fr 1.22fr;gap:12px;align-items:stretch}
+.compare figure{margin:0;display:flex;flex-direction:column}
+.compare .frame{height:100%;min-height:480px}
+.compare .sketch img{object-fit:contain;padding:24px;background:#e4dfd5}
+.compare .stage img{object-fit:cover}
+.support{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.support figure{margin:0}
+.support .frame{aspect-ratio:16/10}
+.support img{object-fit:cover}
+.case-footer{margin-top:22px;display:flex;justify-content:space-between;gap:24px;color:var(--muted);font-size:11px;line-height:1.5}
+.contact{padding:90px 0 110px;background:var(--paper-3)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
+.contact h2{font-size:clamp(48px,7vw,92px);line-height:.92;letter-spacing:-.055em;margin:10px 0 0;font-weight:620}
+.contact-right{font-size:16px;line-height:1.7}
+.contact-right a{border-bottom:1px solid rgba(34,34,31,.35)}
+.modal{position:fixed;inset:0;z-index:100;background:rgba(28,27,24,.94);display:none;align-items:center;justify-content:center;padding:28px}
+.modal.open{display:flex}
+.modal img{max-width:95vw;max-height:92vh;object-fit:contain}
+.modal button{position:absolute;right:18px;top:12px;border:0;background:transparent;color:white;font-size:34px;cursor:pointer}
+.zoom{cursor:zoom-in}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:42px}
+  .hero-visual{max-width:760px}
+  .index-grid{grid-template-columns:1fr;gap:18px}
+  .case-head{grid-template-columns:54px 1fr}
+  .case-head .meta{grid-column:2}
+  .case-copy{grid-template-columns:54px 1fr}
+  .case-copy .label{grid-row:1/3}
+  .compare{grid-template-columns:1fr 1.2fr}
+  .compare .frame{min-height:360px}
+}
+@media(max-width:640px){
+  .shell{width:min(var(--max),calc(100% - 30px))}
+  .site-head .shell{height:58px}
+  .nav{display:none}
+  .hero{padding:54px 0 62px}
+  h1{font-size:clamp(40px,12vw,52px);line-height:.96;letter-spacing:-.05em;overflow-wrap:break-word}
+  .hero-copy{font-size:18px;line-height:1.35}
+  .hero-visual{grid-template-columns:1fr;gap:10px}.hero-visual .sketch .frame{aspect-ratio:16/9}.hero-visual .stage .frame{aspect-ratio:16/10}
+  .hero-note{gap:12px 22px}
+  .index{padding:26px 0}
+  .index-list{grid-template-columns:1fr}
+  .case{padding:66px 0 76px}
+  .case-head{grid-template-columns:38px 1fr;gap:12px;margin-bottom:30px}
+  .case-no{padding-top:7px}
+  .case h2{font-size:clamp(38px,12vw,58px);line-height:.98}
+  .case-head .meta{grid-column:2}
+  .case-copy{grid-template-columns:1fr;gap:12px;margin-bottom:28px}
+  .case-copy .label{grid-row:auto}
+  .case-copy p{font-size:17px;line-height:1.42}
+  .compare{grid-template-columns:1fr;gap:10px}
+  .compare .frame{min-height:0;aspect-ratio:4/3}
+  .compare .sketch .frame{aspect-ratio:4/3}
+  .compare .stage .frame{aspect-ratio:16/10}
+  .support{grid-template-columns:1fr;gap:10px;margin-top:10px}
+  .case-footer{flex-direction:column}
+  .contact{padding:64px 0 78px}
+  .contact-grid{grid-template-columns:1fr;gap:28px}
+}
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><div>АНТОН БЛЕДНЫХ</div><div class="links"><a href="#works">работы</a><a href="#about">подход</a></div></div></header>
+<header class="site-head">
+  <div class="shell">
+    <div class="brand">Антон Бледных · сценограф</div>
+    <nav class="nav"><a href="#works">Избранные работы</a><a href="#contact">Контакты</a></nav>
+  </div>
+</header>
 
 <main>
-<section class="hero wrap">
-  <div class="kicker">Сценограф · художник-постановщик</div>
-  <h1>ПРОСТРАНСТВО<br>КАК ДЕЙСТВИЕ</h1>
-  <p class="lead">Избранные театральные работы. Сценография, в которой образ становится правилом спектакля — механизмом, маршрутом, пустотой, движением или общей материальной средой.</p>
+<section class="hero">
+  <div class="shell hero-grid">
+    <div>
+      <div class="eyebrow">Портфолио · 2019–2026</div>
+      <h1>Сценография как система действия</h1>
+      <p class="hero-copy">Я работаю с пространством, светом, предметом и трансформацией. В каждом проекте ищу ясный сценический принцип, который не иллюстрирует спектакль, а помогает ему происходить.</p>
+      <div class="hero-note"><span>Сценография</span><span>Костюм</span><span>Свет</span><span>Медиа</span><span>Производство</span></div>
+    </div>
+    <div class="hero-visual">
+      <figure class="sketch"><div class="frame"><img src="images/pochtamt-sketch.jpg" alt="Эскиз Почтамта"></div><figcaption>Проект / эскиз</figcaption></figure>
+      <figure class="stage"><div class="frame"><img src="images/pochtamt-1.jpg" alt="Реализация Почтамта"></div><figcaption>Реализация</figcaption></figure>
+    </div>
+  </div>
 </section>
 
-<section class="statement wrap" id="about">
-  <div class="section-label">Авторский подход</div>
-  <p>Мне важно найти одно ясное сценическое правило и сделать так, чтобы весь спектакль начал существовать внутри него.</p>
+<section class="index" id="works">
+  <div class="shell index-grid">
+    <div class="eyebrow">Избранные постановки</div>
+    <div class="index-list">
+      <a class="index-item" href="#pochtamt"><span>Почтамт</span><span>2021</span></a>
+      <a class="index-item" href="#podpolie"><span>Подполье</span><span>2022</span></a>
+      <a class="index-item" href="#taganok"><span>Таганок</span><span>2019</span></a>
+      <a class="index-item" href="#nebesny"><span>Небесный тихоход</span><span>2023</span></a>
+      <a class="index-item" href="#radost"><span>Радость нашего дома</span><span>2025</span></a>
+      <a class="index-item" href="#angels"><span>Когда ангелы шутят</span><span>2024</span></a>
+      <a class="index-item" href="#prosti"><span>Прости меня, мама</span><span>2021</span></a>
+      <a class="index-item" href="#schastie"><span>Счастье моё</span><span>2024</span></a>
+    </div>
+  </div>
 </section>
 
-<div id="works">
-<section class="project wrap">
-  <div class="project-head"><h2>Почтамт</h2><div class="meta"><div>2021 · Шадринский государственный драматический театр</div><div>Режиссёр — Антон Елисеев</div><div>Художник-постановщик — Антон Бледных</div><div class="idea">Конвейер и бумажные коробки становятся общей системой спектакля: люди проходят через неё так же, как вещи.</div></div></div>
-  <div class="gallery"><img src="images/pochtamt-1.jpg" alt="Почтамт"><img src="images/pochtamt-2.jpg" alt="Почтамт"><img src="images/pochtamt-3.jpg" alt="Почтамт"></div>
+<section class="case" id="pochtamt">
+  <div class="shell">
+    <div class="case-head"><div class="case-no">01</div><h2>Почтамт</h2><div class="meta">2021 · Шадринский государственный драматический театр<br><strong>Режиссёр:</strong> Антон Елисеев<br><strong>Художник-постановщик:</strong> Антон Бледных</div></div>
+    <div class="case-copy"><div class="label">Кейс</div><p><strong>Идея.</strong> Почтамт — не место, а безличная система, через которую проходят люди, посылки, отношения и сама жизнь.</p><p><strong>Сценическое правило.</strong> Конвейер и коробки становятся одновременно рабочей средой, жильём, телом, грузом и могилой. Один механизм организует весь спектакль.</p></div>
+    <div class="compare"><figure class="sketch"><div class="frame"><img class="zoom" loading="lazy" src="images/pochtamt-sketch.jpg" alt="Проект Почтамта"></div><figcaption>Проектный эскиз / визуализация</figcaption></figure><figure class="stage"><div class="frame"><img class="zoom" loading="lazy" src="images/pochtamt-1.jpg" alt="Почтамт на сцене"></div><figcaption>Реализация · общий вид</figcaption></figure></div>
+    <div class="support"><figure><div class="frame"><img class="zoom" loading="lazy" src="images/pochtamt-2.jpg" alt="Почтамт"></div><figcaption>Сценическое состояние</figcaption></figure><figure><div class="frame"><img class="zoom" loading="lazy" src="images/pochtamt-3.jpg" alt="Почтамт"></div><figcaption>Работа пространства в действии</figcaption></figure></div>
+    <div class="case-footer"><span>Сценография · свет · видео</span><span>Участник XV Международного фестиваля «Коляда-Plays / Евразия»</span></div>
+  </div>
 </section>
 
-<section class="project wrap">
-  <div class="project-head"><h2>Подполье</h2><div class="meta"><div>2022 · Шадринский государственный драматический театр</div><div>Режиссёр — Антон Елисеев</div><div>Сценография — Антон Бледных</div><div class="idea">Манекены — воображаемое общество и судящие собеседники героя. Зеркала превращают пространство в систему самонаблюдения.</div></div></div>
-  <div class="gallery"><img src="images/podpolie-1.jpg" alt="Подполье"><img src="images/podpolie-2.jpg" alt="Подполье"><img src="images/podpolie-3.jpg" alt="Подполье"></div>
+<section class="case" id="podpolie">
+  <div class="shell">
+    <div class="case-head"><div class="case-no">02</div><h2>Подполье</h2><div class="meta">2022 · Шадринский государственный драматический театр<br><strong>Режиссёр:</strong> Антон Елисеев<br><strong>Художник-постановщик:</strong> Антон Бледных</div></div>
+    <div class="case-copy"><div class="label">Кейс</div><p><strong>Идея.</strong> Подпольный человек всё время существует перед воображаемым обществом, которое он одновременно презирает и боится.</p><p><strong>Сценическое правило.</strong> Манекены становятся его судящими собеседниками, зеркала — машиной самонаблюдения. После переноса на малую сцену решение было пересобрано, а не уменьшено.</p></div>
+    <div class="compare"><figure class="sketch"><div class="frame"><img class="zoom" loading="lazy" src="images/podpolie-sketch.jpg" alt="Эскиз Подполья"></div><figcaption>Проект / пространственная визуализация</figcaption></figure><figure class="stage"><div class="frame"><img class="zoom" loading="lazy" src="images/podpolie-1.jpg" alt="Подполье на сцене"></div><figcaption>Реализация · малая сцена</figcaption></figure></div>
+    <div class="support"><figure><div class="frame"><img class="zoom" loading="lazy" src="images/podpolie-2.jpg" alt="Подполье"></div><figcaption>Манекены как воображаемое общество</figcaption></figure><figure><div class="frame"><img class="zoom" loading="lazy" src="images/podpolie-3.jpg" alt="Подполье"></div><figcaption>Зеркало, свет и актёр</figcaption></figure></div>
+    <div class="case-footer"><span>Сценография · свет</span><span>Участник фестиваля «ГиБрИд», 2024</span></div>
+  </div>
 </section>
 
-<section class="project wrap">
-  <div class="project-head"><h2>Таганок</h2><div class="meta"><div>2019 · студия «Арлекин», Салаватский башкирский драматический театр</div><div>Режиссёр — Радик Галиуллин</div><div>Сценография, соавторство инсценировки — Антон Бледных</div><div class="idea">Поворотный круг создаёт множество состояний одного пространства. Его движение становится частью драматургии взросления героев.</div></div></div>
-  <div class="gallery"><img src="images/taganok-1.jpg" alt="Таганок"><img src="images/taganok-2.jpg" alt="Таганок"><img src="images/taganok-3.jpg" alt="Таганок"></div>
+<section class="case" id="taganok">
+  <div class="shell">
+    <div class="case-head"><div class="case-no">03</div><h2>Таганок</h2><div class="meta">2019 · студия «Арлекин», Салаватский башкирский драматический театр<br><strong>Режиссёр:</strong> Радик Галиуллин<br><strong>Художник-постановщик:</strong> Антон Бледных</div></div>
+    <div class="case-copy"><div class="label">Кейс</div><p><strong>Идея.</strong> История взросления строится не вокруг смены декораций, а вокруг движения одного мира.</p><p><strong>Сценическое правило.</strong> Поворотный круг даёт около четырнадцати состояний пространства. В ключевой сцене герой останавливает привычное движение и запускает его обратно; финальная форма раскрывает силуэт орла.</p></div>
+    <div class="compare"><figure class="sketch"><div class="frame"><img class="zoom" loading="lazy" src="images/taganok-sketch.jpg" alt="Рабочая схема Таганка"></div><figcaption>Рабочий проект / схема сцены</figcaption></figure><figure class="stage"><div class="frame"><img class="zoom" loading="lazy" src="images/taganok-1.jpg" alt="Таганок на сцене"></div><figcaption>Реализация · одно из состояний круга</figcaption></figure></div>
+    <div class="support"><figure><div class="frame"><img class="zoom" loading="lazy" src="images/taganok-2.jpg" alt="Таганок"></div><figcaption>Трансформация рельефа</figcaption></figure><figure><div class="frame"><img class="zoom" loading="lazy" src="images/taganok-3.jpg" alt="Таганок"></div><figcaption>Финальное состояние</figcaption></figure></div>
+    <div class="case-footer"><span>Сценография · участие в создании инсценировки</span><span>Гран-при фестивалей; «Театральное Приволжье»; «Золотой Трезини»</span></div>
+  </div>
 </section>
 
-<section class="project wrap">
-  <div class="project-head"><h2>Небесный тихоход</h2><div class="meta"><div>2023 · Шадринский драматический театр</div><div>Режиссёр — Александр Колмогоров</div><div>Сценография, костюмы, свет — Антон Бледных</div><div class="idea">Война показана через почти пустое пространство. Главный зрительный образ — сам ансамбль эскадрильи; ящики, полотна и маленький самолёт включаются в действие.</div></div></div>
-  <div class="gallery"><img src="images/nebesny-1.jpg" alt="Небесный тихоход"><img src="images/nebesny-2.jpg" alt="Небесный тихоход"><img src="images/nebesny-3.jpg" alt="Небесный тихоход"></div>
+<section class="case" id="nebesny">
+  <div class="shell">
+    <div class="case-head"><div class="case-no">04</div><h2>Небесный тихоход</h2><div class="meta">2023 · Шадринский государственный драматический театр<br><strong>Режиссёр:</strong> Александр Колмогоров<br><strong>Художник-постановщик:</strong> Антон Бледных</div></div>
+    <div class="case-copy"><div class="label">Кейс</div><p><strong>Идея.</strong> У людей на войне почти ничего нет. Поэтому главным образом спектакля становится не декорация, а отсутствие привычного предметного мира.</p><p><strong>Сценическое правило.</strong> Пустота держит ансамбль. Ящики, белые полотна и маленький бумажный самолёт появляются как редкие, точно дозированные материальные события.</p></div>
+    <div class="compare"><figure class="sketch"><div class="frame"><img class="zoom" loading="lazy" src="images/nebesny-sketch.jpg" alt="Эскиз Небесного тихохода"></div><figcaption>Проектный эскиз</figcaption></figure><figure class="stage"><div class="frame"><img class="zoom" loading="lazy" src="images/nebesny-1.jpg" alt="Небесный тихоход на сцене"></div><figcaption>Реализация · ансамбль в пустом пространстве</figcaption></figure></div>
+    <div class="support"><figure><div class="frame"><img class="zoom" loading="lazy" src="images/nebesny-2.jpg" alt="Небесный тихоход"></div><figcaption>Бумажный самолёт</figcaption></figure><figure><div class="frame"><img class="zoom" loading="lazy" src="images/nebesny-3.jpg" alt="Небесный тихоход"></div><figcaption>Белые полотна в массовой сцене</figcaption></figure></div>
+    <div class="case-footer"><span>Сценография · костюм · свет</span><span>Большая сцена / гастрольный репертуар</span></div>
+  </div>
 </section>
 
-<section class="project wrap">
-  <div class="project-head"><h2>Радость нашего дома</h2><div class="meta"><div>2025 · Государственный Табасаранский драматический театр</div><div>Режиссёр — Лиана Нигматуллина</div><div>Сценография, костюмы, свет — Антон Бледных</div><div class="idea">Отдельные нити складываются в общее полотно. В кульминации материал перестаёт быть фоном и становится физическим действием героев.</div></div></div>
-  <div class="gallery"><img src="images/radost-1.jpg" alt="Радость нашего дома"><img src="images/radost-2.jpg" alt="Радость нашего дома"><img src="images/radost-3.jpg" alt="Радость нашего дома"></div>
+<section class="case" id="radost">
+  <div class="shell">
+    <div class="case-head"><div class="case-no">05</div><h2>Радость нашего дома</h2><div class="meta">2025 · Государственный Табасаранский драматический театр<br><strong>Режиссёр:</strong> Лиана Нигматуллина<br><strong>Художник:</strong> Антон Бледных</div></div>
+    <div class="case-copy"><div class="label">Кейс</div><p><strong>Идея.</strong> Каждый человек — отдельная нить; общность возникает только тогда, когда эти нити связываются в единое полотно.</p><p><strong>Сценическое правило.</strong> Нити, канаты и универсальные скамейки образуют один материальный язык. В сцене прощания полотно перестаёт быть фоном и физически включается в действие.</p></div>
+    <div class="compare"><figure class="sketch"><div class="frame"><img class="zoom" loading="lazy" src="images/radost-sketch.jpg" alt="Эскиз Радости нашего дома"></div><figcaption>Проектный рендер</figcaption></figure><figure class="stage"><div class="frame"><img class="zoom" loading="lazy" src="images/radost-1.jpg" alt="Радость нашего дома на сцене"></div><figcaption>Реализация · полотно из нитей</figcaption></figure></div>
+    <div class="support"><figure><div class="frame"><img class="zoom" loading="lazy" src="images/radost-2.jpg" alt="Радость нашего дома"></div><figcaption>Работа полотна и света</figcaption></figure><figure><div class="frame"><img class="zoom" loading="lazy" src="images/radost-3.jpg" alt="Радость нашего дома"></div><figcaption>Ансамбль и трансформируемая среда</figcaption></figure></div>
+    <div class="case-footer"><span>Сценография · костюм · свет</span><span>Проект и реализация в Дагестане</span></div>
+  </div>
 </section>
 
-<section class="project wrap">
-  <div class="project-head"><h2>Счастье моё</h2><div class="meta"><div>2024 · Шадринский государственный драматический театр</div><div>Режиссёр — Ильшат Мухутдинов</div><div>Сценография — Антон Бледных</div><div class="idea">Намеренно неуравновешенная предметная среда первого акта постепенно становится пространством, в котором уже возможно жить.</div></div></div>
-  <div class="gallery"><img src="images/schastie-1.jpg" alt="Счастье моё"><img src="images/schastie-2.jpg" alt="Счастье моё"><img src="images/schastie-3.jpg" alt="Счастье моё"></div>
+<section class="case" id="angels">
+  <div class="shell">
+    <div class="case-head"><div class="case-no">06</div><h2>Когда ангелы шутят</h2><div class="meta">2024 · Шадринский государственный драматический театр<br><strong>Режиссёр:</strong> Юрий Раменсков<br><strong>Художник:</strong> Антон Бледных</div></div>
+    <div class="case-copy"><div class="label">Кейс</div><p><strong>Идея.</strong> Множество мест действия должно существовать на одной сцене без бытовой смены декораций.</p><p><strong>Сценическое правило.</strong> Архитектурный каркас и трансформируемые элементы задают маршрут актёров и переключают пространство. Один объём держит квартиру, улицу и рождественскую условность.</p></div>
+    <div class="compare"><figure class="sketch"><div class="frame"><img class="zoom" loading="lazy" src="images/angels-sketch.jpg" alt="Эскиз Когда ангелы шутят"></div><figcaption>Проектный эскиз / сцена в квартире</figcaption></figure><figure class="stage"><div class="frame"><img class="zoom" loading="lazy" src="images/angels-1.jpg" alt="Когда ангелы шутят на сцене"></div><figcaption>Реализация</figcaption></figure></div>
+    <div class="support"><figure><div class="frame"><img class="zoom" loading="lazy" src="images/angels-2.jpg" alt="Когда ангелы шутят"></div><figcaption>Другое состояние пространства</figcaption></figure><figure><div class="frame"><img class="zoom" loading="lazy" src="images/angels-3.jpg" alt="Когда ангелы шутят"></div><figcaption>Актёр и архитектурная среда</figcaption></figure></div>
+    <div class="case-footer"><span>Сценография · костюм · свет</span><span>Большая сцена / многолокационная постановка</span></div>
+  </div>
 </section>
 
-<section class="project wrap">
-  <div class="project-head"><h2>Хайбуш</h2><div class="meta"><div>2026 · Башкирский драматический театр им. И. Юмагулова, Стерлитамак</div><div>Режиссёр — Фанис Каримов</div><div>Сценография, костюмы — Антон Бледных</div><div class="idea">Гротескный мир показного благополучия: яркая офисно-кабаретная среда и мебель, которая визуально кажется мягкой, но физически остаётся жёсткой.</div></div></div>
-  <div class="gallery"><img src="images/haibush-1.jpg" alt="Хайбуш"><img src="images/haibush-2.jpg" alt="Хайбуш"><img src="images/haibush-3.jpg" alt="Хайбуш"></div>
+<section class="case" id="prosti">
+  <div class="shell">
+    <div class="case-head"><div class="case-no">07</div><h2>Прости меня, мама</h2><div class="meta">2021 · Салаватский башкирский драматический театр<br><strong>Режиссёр:</strong> Радик Галиуллин<br><strong>Художник-постановщик:</strong> Антон Бледных</div></div>
+    <div class="case-copy"><div class="label">Кейс</div><p><strong>Идея.</strong> Герои существуют буквально под нормальной жизнью — в пространстве, которое находится ниже привычного человеческого порядка.</p><p><strong>Сценическое правило.</strong> Среда под мостом становится не иллюстрацией места, а моделью положения персонажей: жизнь проходит над ними, а они вынуждены выстраивать собственный мир внизу.</p></div>
+    <div class="compare"><figure class="sketch"><div class="frame"><img class="zoom" loading="lazy" src="images/prosti-sketch.jpg" alt="Эскиз Прости меня, мама"></div><figcaption>Проектный рендер</figcaption></figure><figure class="stage"><div class="frame"><img class="zoom" loading="lazy" src="images/prosti-1.jpg" alt="Прости меня, мама на сцене"></div><figcaption>Реализация</figcaption></figure></div>
+    <div class="support"><figure><div class="frame"><img class="zoom" loading="lazy" src="images/prosti-2.jpg" alt="Прости меня, мама"></div><figcaption>Пространство в действии</figcaption></figure><figure><div class="frame"><img class="zoom" loading="lazy" src="images/prosti-3.jpg" alt="Прости меня, мама"></div><figcaption>Световое состояние</figcaption></figure></div>
+    <div class="case-footer"><span>Сценография · костюм · свет</span><span>Премьера 14.10.2021</span></div>
+  </div>
 </section>
-</div>
 
-<footer class="wrap">
-  <div class="section-label">Selected works · 2019–2026</div>
-  <p class="foot-title">АНТОН<br>БЛЕДНЫХ</p>
-  <div class="small">Сценограф · художник-постановщик · свет · медиа · театральное производство</div>
+<section class="case" id="schastie">
+  <div class="shell">
+    <div class="case-head"><div class="case-no">08</div><h2>Счастье моё</h2><div class="meta">2024 · Шадринский государственный драматический театр<br><strong>Режиссёр:</strong> Ильшат Мухутдинов<br><strong>Художник-постановщик:</strong> Антон Бледных</div></div>
+    <div class="case-copy"><div class="label">Кейс</div><p><strong>Идея.</strong> Молодая героиня пытается жить в мире, который после войны ещё не готов к её нормальной частной жизни.</p><p><strong>Сценическое правило.</strong> Первый акт намеренно композиционно неуравновешен и перегружен предметами. Во втором школа становится собраннее и пригоднее для жизни — сама среда проходит путь вместе с героиней.</p></div>
+    <div class="compare"><figure class="sketch"><div class="frame"><img class="zoom" loading="lazy" src="images/schastie-sketch.jpg" alt="Эскиз Счастье моё"></div><figcaption>Проектный эскиз / основная сцена</figcaption></figure><figure class="stage"><div class="frame"><img class="zoom" loading="lazy" src="images/schastie-1.jpg" alt="Счастье моё на сцене"></div><figcaption>Реализация</figcaption></figure></div>
+    <div class="support"><figure><div class="frame"><img class="zoom" loading="lazy" src="images/schastie-2.jpg" alt="Счастье моё"></div><figcaption>Предметная среда</figcaption></figure><figure><div class="frame"><img class="zoom" loading="lazy" src="images/schastie-3.jpg" alt="Счастье моё"></div><figcaption>Пространство и актёры</figcaption></figure></div>
+    <div class="case-footer"><span>Сценография · предметная среда · производственная разработка</span><span>Эксперимент с 3D-печатью отдельных бутафорских элементов</span></div>
+  </div>
+</section>
+
+<footer class="contact" id="contact">
+  <div class="shell contact-grid">
+    <div><div class="eyebrow">Контакты</div><h2>Антон<br>Бледных</h2></div>
+    <div class="contact-right">Сценограф · художник-постановщик · художник по свету<br><a href="mailto:a.s.blednykh@list.ru">a.s.blednykh@list.ru</a><br><a href="tel:+79173713183">+7 917 371-31-83</a></div>
+  </div>
 </footer>
 </main>
 
-<div class="modal" id="modal"><button class="close" aria-label="Закрыть">×</button><img alt=""></div>
+<div class="modal" id="modal"><button aria-label="Закрыть">×</button><img alt=""></div>
 <script>
-const modal=document.getElementById('modal'), mimg=modal.querySelector('img');
-document.querySelectorAll('.gallery img').forEach(img=>img.addEventListener('click',()=>{mimg.src=img.src;modal.classList.add('open')}));
-modal.addEventListener('click',e=>{if(e.target===modal||e.target.classList.contains('close'))modal.classList.remove('open')});
+const modal=document.getElementById('modal'),mimg=modal.querySelector('img');
+document.querySelectorAll('.zoom').forEach(img=>img.addEventListener('click',()=>{mimg.src=img.src;modal.classList.add('open')}));
+modal.addEventListener('click',e=>{if(e.target===modal||e.target.tagName==='BUTTON')modal.classList.remove('open')});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')modal.classList.remove('open')});
 </script>
-</body></html>
+</body>
+</html>
+
