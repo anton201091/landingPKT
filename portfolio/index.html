@@ -73,10 +73,10 @@ figcaption{margin-top:8px;font-size:9px;line-height:1.35;letter-spacing:.13em;te
 .pochtamt-grid{display:grid;grid-template-columns:.76fr 1.24fr;gap:12px;align-items:stretch}
 .pochtamt-grid .project .panel{height:100%;min-height:460px}
 .pochtamt-grid .hero-photo .panel{height:100%;min-height:460px}
-.pochtamt-strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:12px}
+.pochtamt-strip{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
 .pochtamt-strip .panel{aspect-ratio:16/10}
 .pochtamt-strip figure:nth-child(2){transform:translateY(18px)}
-.pochtamt-strip figure:nth-child(3){transform:translateY(36px)}
+
 
 /* 02 PODPOLIE — mirrored / fractured */
 .case--podpolie{--case-accent:#665a7c;background:#d8d3dc}
@@ -87,7 +87,7 @@ figcaption{margin-top:8px;font-size:9px;line-height:1.35;letter-spacing:.13em;te
 .pod-stage .large .panel{height:560px}
 .pod-stage .side{display:grid;grid-template-columns:1fr;gap:12px}
 .pod-stage .side .panel{aspect-ratio:16/10}
-.pod-footer{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.pod-footer{display:grid;grid-template-columns:1fr;gap:12px;margin-top:12px;width:min(72%,820px)}
 .pod-footer .panel{aspect-ratio:16/9}
 
 /* 03 TAGANOK — rotation / sequence */
@@ -95,11 +95,11 @@ figcaption{margin-top:8px;font-size:9px;line-height:1.35;letter-spacing:.13em;te
 .tag-lead{display:grid;grid-template-columns:.38fr 1.62fr;gap:14px;align-items:stretch}
 .tag-lead .plan .panel{height:100%;min-height:500px}
 .tag-lead .wide .panel{height:100%;min-height:500px}
-.tag-sequence{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:18px}
+.tag-sequence{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
 .tag-sequence .panel{aspect-ratio:4/3}
 .tag-sequence figure:nth-child(2){transform:translateY(12px)}
 .tag-sequence figure:nth-child(3){transform:translateY(24px)}
-.tag-sequence figure:nth-child(4){transform:translateY(36px)}
+
 .tag-detail{display:grid;grid-template-columns:.34fr 1fr;gap:12px;margin-top:54px;align-items:end}
 .tag-detail .project .panel{aspect-ratio:3/4}
 .tag-detail .final .panel{aspect-ratio:16/9}
@@ -137,7 +137,6 @@ figcaption{margin-top:8px;font-size:9px;line-height:1.35;letter-spacing:.13em;te
 .angels-grid figure:nth-child(2){grid-column:6/13;grid-row:1/6}
 .angels-grid figure:nth-child(3){grid-column:1/8;grid-row:5/10}
 .angels-grid figure:nth-child(4){grid-column:8/13;grid-row:6/10}
-.angels-grid figure:nth-child(5){grid-column:1/13;grid-row:10/15}
 .angels-grid .panel{height:100%}
 
 /* 07 PROSTI — upper/lower bridge */
@@ -220,7 +219,7 @@ figcaption{margin-top:8px;font-size:9px;line-height:1.35;letter-spacing:.13em;te
  .pochtamt-strip figure{transform:none!important}
  .pod-top{grid-template-columns:1fr}
  .pod-top .project:last-child{transform:none}
- .pod-footer{grid-template-columns:1fr}
+ .pod-footer{grid-template-columns:1fr;width:100%}
  .tag-sequence{grid-template-columns:1fr}
  .tag-detail{margin-top:18px}
  .neb-lead,.neb-row{gap:14px}
@@ -296,9 +295,8 @@ figcaption{margin-top:8px;font-size:9px;line-height:1.35;letter-spacing:.13em;te
       <figure class="hero-photo reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/pochtamt-1.jpg" alt="Почтамт на сцене"></div><figcaption>Реализация / система в действии</figcaption></figure>
     </div>
     <div class="pochtamt-strip">
-      <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/pochtamt-sketch2.jpg" alt="Второй эскиз Почтамта"></div><figcaption>Проектное состояние</figcaption></figure>
-      <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/pochtamt-2.jpg" alt="Почтамт"></div><figcaption>Конвейер / люди / коробки</figcaption></figure>
-      <figure class="reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/pochtamt-3.jpg" alt="Почтамт"></div><figcaption>Сценическое состояние</figcaption></figure>
+      <figure class="reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/pochtamt-2.jpg" alt="Почтамт"></div><figcaption>Другое состояние пространства</figcaption></figure>
+      <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/pochtamt-3.jpg" alt="Почтамт"></div><figcaption>Предметная система в действии</figcaption></figure>
     </div>
     <div class="case-end"><div class="case-note">Сценография · костюмы · свет · медиа</div><div class="case-note">Участник XV Международного фестиваля «Коляда-Plays / Евразия»</div></div>
   </div>
@@ -317,7 +315,7 @@ figcaption{margin-top:8px;font-size:9px;line-height:1.35;letter-spacing:.13em;te
     </div>
     <div class="pod-top">
       <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-initial.jpg" alt="Ранний вариант Подполья"></div><figcaption>Первоначальная версия / большая сцена</figcaption></figure>
-      <figure class="project reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-final.jpg" alt="Финальная пространственная версия Подполья"></div><figcaption>Финальная пространственная версия / зеркала и манекены</figcaption></figure>
+      <figure class="project reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-final.jpg" alt="Рабочая схема финальной версии Подполья"></div><figcaption>Рабочая схема финальной версии / малая сцена</figcaption></figure>
     </div>
     <div class="pod-stage">
       <figure class="large reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-4.jpg" alt="Подполье на сцене"></div><figcaption>Реализация / общий вид пространства</figcaption></figure>
@@ -327,8 +325,7 @@ figcaption{margin-top:8px;font-size:9px;line-height:1.35;letter-spacing:.13em;te
       </div>
     </div>
     <div class="pod-footer">
-      <figure class="reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-3.jpg" alt="Подполье"></div><figcaption>Персонаж и отражение</figcaption></figure>
-      <figure class="project reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-sketch.jpg" alt="Эскиз ранней версии Подполья"></div><figcaption>Эскиз раннего поиска / сохранён как этап развития решения</figcaption></figure>
+      <figure class="reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-3.jpg" alt="Подполье"></div><figcaption>Персонаж, отражение и глубина камерного пространства</figcaption></figure>
     </div>
     <div class="case-end"><div class="case-note">Сценография · костюмы · свет</div><div class="case-note">Ключевой переход: большая сцена → камерное пространство без уменьшения идеи</div></div>
   </div>
@@ -350,14 +347,13 @@ figcaption{margin-top:8px;font-size:9px;line-height:1.35;letter-spacing:.13em;te
       <figure class="wide reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-wide.jpg" alt="Таганок, общий вид"></div><figcaption>Реализация / широкий общий вид</figcaption></figure>
     </div>
     <div class="tag-sequence">
-      <figure class="reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-1.jpg" alt="Таганок"></div><figcaption>Состояние 1</figcaption></figure>
-      <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-2.jpg" alt="Таганок"></div><figcaption>Состояние 2</figcaption></figure>
-      <figure class="reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-5.jpg" alt="Таганок"></div><figcaption>Состояние 3</figcaption></figure>
-      <figure class="reveal" data-delay="3"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-4.jpg" alt="Таганок"></div><figcaption>Финальный ансамбль</figcaption></figure>
+      <figure class="reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-2.jpg" alt="Таганок"></div><figcaption>Положение круга / дом и рельеф</figcaption></figure>
+      <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-6.jpg" alt="Таганок"></div><figcaption>Положение круга / два масштаба пространства</figcaption></figure>
+      <figure class="reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-5.jpg" alt="Таганок"></div><figcaption>Положение круга / многоуровневая композиция</figcaption></figure>
     </div>
     <div class="tag-detail">
       <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-costume.jpg" alt="Костюмный эскиз Таганка"></div><figcaption>Костюмный эскиз</figcaption></figure>
-      <figure class="final reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-3.jpg" alt="Финал Таганка"></div><figcaption>Финал / форма декорации раскрывается после прохождения героями пути</figcaption></figure>
+      <figure class="final reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-4.jpg" alt="Финал Таганка"></div><figcaption>Финал / мальчики и скрытый силуэт орла</figcaption></figure>
     </div>
     <div class="case-end"><div class="case-note">Сценография · костюмы · свет · соавторство инсценировки</div><div class="case-note">Фестивальная история: «Театральное Приволжье», «Золотой Трезини» и др.</div></div>
   </div>
@@ -386,7 +382,6 @@ figcaption{margin-top:8px;font-size:9px;line-height:1.35;letter-spacing:.13em;te
       </div>
       <figure class="big reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/nebesny-3.jpg" alt="Белые полотна"></div><figcaption>Белые полотна / массовая сцена</figcaption></figure>
     </div>
-    <figure class="project neb-costume reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/nebesny-costume.jpg" alt="Костюмная разработка Небесного тихохода"></div><figcaption>Костюмная разработка</figcaption></figure>
     <div class="case-end"><div class="case-note">Сценография · костюмы · свет</div><div class="case-note">Принцип: минимальное количество предметов — максимальная роль пространства и ансамбля</div></div>
   </div>
 </section>
@@ -430,11 +425,10 @@ figcaption{margin-top:8px;font-size:9px;line-height:1.35;letter-spacing:.13em;te
       <p class="reveal" data-delay="2">Маршрут актёров, трансформируемые элементы и одна система архитектурных линий удерживают квартиру, улицу и рождественскую условность.</p>
     </div>
     <div class="angels-grid">
-      <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-sketch.jpg" alt="Эскиз Когда ангелы шутят"></div><figcaption>Проект / квартира</figcaption></figure>
-      <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-1.jpg" alt="Когда ангелы шутят"></div><figcaption>Реализация</figcaption></figure>
-      <figure class="project reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-sketch2.jpg" alt="Эскиз Когда ангелы шутят"></div><figcaption>Проект / другое состояние</figcaption></figure>
-      <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-2.jpg" alt="Когда ангелы шутят"></div><figcaption>Смена локации внутри общего каркаса</figcaption></figure>
-      <figure class="reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-3.jpg" alt="Когда ангелы шутят"></div><figcaption>Сценография / костюм / свет в едином кадре</figcaption></figure>
+      <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-sketch.jpg" alt="Эскиз Когда ангелы шутят"></div><figcaption>Проект / архитектурная система</figcaption></figure>
+      <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-1.jpg" alt="Когда ангелы шутят"></div><figcaption>Реализация / общий вид</figcaption></figure>
+      <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-2.jpg" alt="Когда ангелы шутят"></div><figcaption>Другое состояние той же системы</figcaption></figure>
+      <figure class="reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-3.jpg" alt="Когда ангелы шутят"></div><figcaption>Сценография, костюм и свет в едином кадре</figcaption></figure>
     </div>
     <div class="case-end"><div class="case-note">Сценография · костюмы · свет</div><div class="case-note">Большая сцена / многолокационная постановка / архитектурная трансформация</div></div>
   </div>
