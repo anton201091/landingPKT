@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ru">
 <head>
 <meta charset="utf-8">
@@ -465,6 +465,38 @@ figcaption{
   .contact-right{font-size:13px}
 }
 
+
+/* CONTENT EDIT 2026-11-03 */
+.pochtamt-tech{width:min(78%,980px);margin:30px 0 0 auto}
+.pod-origin{width:min(62%,820px);margin-bottom:24px}
+.pod-compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.pod-details{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.pod-costume{width:min(300px,100%);margin:26px 0 0 auto}
+.tag-costumes{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-top:30px;align-items:start}
+.tag-costumes figure.project img{padding:8px}
+.rotate180{transform:rotate(180deg)}
+.tag-final{margin-top:24px}
+.tag-final figure{width:min(78%,980px);margin-left:auto}
+.angels-dev{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px;align-items:start}
+.prosti-projects{display:grid;gap:18px;margin-bottom:24px}
+.prosti-projects .overall{width:100%}
+.prosti-projects .render{width:min(72%,980px);margin-left:auto}
+.prosti-stage{padding-top:18px}
+.prosti-stage .stage-stack{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.rad-columns .stage-grid figure:last-child{grid-column:auto}
+@media(max-width:980px){
+  .pod-origin{width:100%}
+  .pod-compare,.pod-details,.angels-dev{grid-template-columns:1fr}
+  .tag-costumes{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .tag-final figure,.prosti-projects .render{width:100%}
+}
+@media(max-width:680px){
+  .pochtamt-tech{width:100%;margin-top:22px}
+  .tag-costumes{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .pod-costume{margin-left:0}
+  .prosti-stage .stage-stack{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -529,6 +561,9 @@ figcaption{
       <figure class="reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/pochtamt-2.jpg" alt="Почтамт"></div><figcaption>Другое состояние пространства</figcaption></figure>
       <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/pochtamt-3.jpg" alt="Почтамт"></div><figcaption>Предметная система в действии</figcaption></figure>
     </div>
+    <div class="pochtamt-tech">
+      <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/pochtamt-tech.jpg" alt="Техническая разработка конвейера Почтамта"></div><figcaption>Техническая разработка / конструкция конвейера</figcaption></figure>
+    </div>
     <div class="case-end"><div class="case-note">Сценография · сценический механизм · предметная система</div><div class="case-note">Участник XV Международного фестиваля «Коляда-Plays / Евразия»</div></div>
   </div>
 </section>
@@ -544,19 +579,22 @@ figcaption{
       <p class="reveal" data-delay="1"><strong>Воображаемое общество присутствует физически.</strong> Манекены становятся собеседниками и судьями героя.</p>
       <p class="reveal" data-delay="2">Первоначальное решение для большой сцены после переноса спектакля было пересобрано. Зеркальные плоскости, манекены и свет образовали уже другую — камерную — систему.</p>
     </div>
-    <div class="pod-top">
+    <div class="pod-origin">
       <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-initial.jpg" alt="Ранний вариант Подполья"></div><figcaption>Первоначальная версия / большая сцена</figcaption></figure>
-      <figure class="project reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-final.jpg" alt="Рабочая схема финальной версии Подполья"></div><figcaption>Рабочая схема финальной версии / малая сцена</figcaption></figure>
     </div>
-    <div class="pod-stage">
-      <figure class="large reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-4.jpg" alt="Подполье на сцене"></div><figcaption>Реализация / общий вид пространства</figcaption></figure>
-      <div class="side">
-        <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-1.jpg" alt="Подполье"></div><figcaption>Зеркальная среда</figcaption></figure>
-        <figure class="reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-2.jpg" alt="Подполье"></div><figcaption>Манекен как партнёр</figcaption></figure>
-      </div>
+    <div class="pod-compare">
+      <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-shards.jpg" alt="Эскиз финальной версии Подполья с зеркальными осколками"></div><figcaption>Финальная версия / система зеркальных осколков</figcaption></figure>
+      <figure class="large reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-4.jpg" alt="Подполье на сцене"></div><figcaption>Эскиз → реализация / общий вид пространства</figcaption></figure>
+    </div>
+    <div class="pod-details">
+      <figure class="reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-1.jpg" alt="Подполье"></div><figcaption>Зеркальная среда</figcaption></figure>
+      <figure class="reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-2.jpg" alt="Подполье"></div><figcaption>Манекен как партнёр</figcaption></figure>
     </div>
     <div class="pod-footer">
       <figure class="reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-3.jpg" alt="Подполье"></div><figcaption>Персонаж, отражение и глубина камерного пространства</figcaption></figure>
+    </div>
+    <div class="pod-costume">
+      <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/podpolie-liza.jpg" alt="Костюмный эскиз Лизы"></div><figcaption>Костюм / Лиза</figcaption></figure>
     </div>
     <div class="case-end"><div class="case-note">Сценография · манекены · зеркальная среда</div><div class="case-note">Ключевой переход: большая сцена → камерное пространство без уменьшения идеи</div></div>
   </div>
@@ -582,9 +620,15 @@ figcaption{
       <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-6.jpg" alt="Таганок"></div><figcaption>Положение круга / два масштаба пространства</figcaption></figure>
       <figure class="reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-5.jpg" alt="Таганок"></div><figcaption>Положение круга / многоуровневая композиция</figcaption></figure>
     </div>
-    <div class="tag-detail">
-      <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-costume.jpg" alt="Костюмный эскиз Таганка"></div><figcaption>Костюмный эскиз</figcaption></figure>
-      <figure class="final reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-4.jpg" alt="Финал Таганка"></div><figcaption>Финал / мальчики и скрытый силуэт орла</figcaption></figure>
+    <div class="tag-costumes">
+      <figure class="project reveal"><div class="panel"><img class="zoom rotate180" loading="lazy" src="images/taganok-yakup.jpg" alt="Костюмный эскиз Якупа"></div><figcaption>Костюм / Якуп</figcaption></figure>
+      <figure class="project reveal"><div class="panel"><img class="zoom rotate180" loading="lazy" src="images/taganok-gabdulla.jpg" alt="Костюмный эскиз Габдуллы"></div><figcaption>Костюм / Габдулла</figcaption></figure>
+      <figure class="project reveal"><div class="panel"><img class="zoom rotate180" loading="lazy" src="images/taganok-aidar.jpg" alt="Костюмный эскиз Айдара"></div><figcaption>Костюм / Айдар</figcaption></figure>
+      <figure class="project reveal"><div class="panel"><img class="zoom rotate180" loading="lazy" src="images/taganok-vazir-start.jpg" alt="Костюмный эскиз Вазира в начале"></div><figcaption>Костюм / Вазир · начало</figcaption></figure>
+      <figure class="project reveal"><div class="panel"><img class="zoom rotate180" loading="lazy" src="images/taganok-vazir-end.jpg" alt="Костюмный эскиз Вазира в финале"></div><figcaption>Костюм / Вазир · финал</figcaption></figure>
+    </div>
+    <div class="tag-final">
+      <figure class="final reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/taganok-4.jpg" alt="Финал Таганка"></div><figcaption>Финал / мальчики и скрытый силуэт орла</figcaption></figure>
     </div>
     <div class="case-end"><div class="case-note">Сценография · совместное создание инсценировки</div><div class="case-note">Фестивальная история: «Театральное Приволжье», «Золотой Трезини» и др.</div></div>
   </div>
@@ -608,7 +652,7 @@ figcaption{
     <div class="neb-space"></div>
     <div class="neb-row">
       <div class="small-stack">
-        <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/nebesny-media.jpg" alt="Проекционный материал Небесного тихохода"></div><figcaption>Медиа / графическая разработка</figcaption></figure>
+        <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/nebesny-po2.jpg" alt="Проекции самолёта По-2"></div><figcaption>Графический материал / проекции По-2</figcaption></figure>
         <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/nebesny-2.jpg" alt="Бумажный самолёт"></div><figcaption>Бумажный самолёт / малый объект в пустом поле</figcaption></figure>
       </div>
       <figure class="big reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/nebesny-3.jpg" alt="Белые полотна"></div><figcaption>Белые полотна / массовая сцена</figcaption></figure>
@@ -635,7 +679,6 @@ figcaption{
     <div class="rad-columns">
       <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/radost-costume.jpg" alt="Костюмный эскиз Радости нашего дома"></div><figcaption>Костюм / авторский эскиз</figcaption></figure>
       <div class="stage-grid">
-        <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/radost-sketch2.jpg" alt="Сценографический эскиз Радости нашего дома"></div><figcaption>Дополнительный проектный вид</figcaption></figure>
         <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/radost-2.jpg" alt="Радость нашего дома"></div><figcaption>Полотно и свет</figcaption></figure>
         <figure class="reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/radost-3.jpg" alt="Радость нашего дома"></div><figcaption>Ансамбль / трансформируемая среда</figcaption></figure>
       </div>
@@ -661,6 +704,10 @@ figcaption{
       <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-2.jpg" alt="Когда ангелы шутят"></div><figcaption>Другое состояние той же системы</figcaption></figure>
       <figure class="reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-3.jpg" alt="Когда ангелы шутят"></div><figcaption>Сценография, костюм и свет в едином кадре</figcaption></figure>
     </div>
+    <div class="angels-dev">
+      <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-flat.jpg" alt="3D-состояние квартиры в спектакле Когда ангелы шутят"></div><figcaption>3D / состояние квартиры</figcaption></figure>
+      <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/angels-hill.jpg" alt="3D-состояние с горкой в спектакле Когда ангелы шутят"></div><figcaption>3D / состояние с горкой</figcaption></figure>
+    </div>
     <div class="case-end"><div class="case-note">Сценография · костюмный проект</div><div class="case-note">Большая сцена / многолокационная постановка / архитектурная трансформация</div></div>
   </div>
 </section>
@@ -676,18 +723,15 @@ figcaption{
       <p class="reveal" data-delay="1"><strong>Герои существуют буквально под нормальной жизнью.</strong> Мост становится границей между привычным миром и их собственным пространством.</p>
       <p class="reveal" data-delay="2">Среда под мостом — не иллюстрация места, а модель положения персонажей: жизнь проходит наверху, они выстраивают свой порядок внизу.</p>
     </div>
+    <div class="prosti-projects">
+      <figure class="project overall reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/prosti-overall.jpg" alt="Общий вид проекта Прости меня, мама"></div><figcaption>Проект / общий вид пространства</figcaption></figure>
+      <figure class="project render reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/prosti-sketch.jpg" alt="Проектный рендер Прости меня, мама"></div><figcaption>Проектный рендер / пространство под мостом</figcaption></figure>
+    </div>
     <div class="prosti-stage">
       <figure class="hero-wide reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/prosti-1.jpg" alt="Прости меня, мама"></div><figcaption>Реализация / пространство под мостом</figcaption></figure>
-      <div class="prosti-lower">
-        <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/prosti-sketch.jpg" alt="Эскиз Прости меня, мама"></div><figcaption>Проектный рендер</figcaption></figure>
-        <div class="stage-stack">
-          <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/prosti-2.jpg" alt="Прости меня, мама"></div><figcaption>Пространство в действии</figcaption></figure>
-          <figure class="reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/prosti-3.jpg" alt="Прости меня, мама"></div><figcaption>Световое состояние</figcaption></figure>
-        </div>
-      </div>
-      <div class="prosti-sketchband">
-        <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/prosti-sketch2.jpg" alt="Дополнительный эскиз Прости меня, мама"></div><figcaption>Общий вид проекта</figcaption></figure>
-        <div></div>
+      <div class="stage-stack">
+        <figure class="reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/prosti-2.jpg" alt="Прости меня, мама"></div><figcaption>Пространство в действии</figcaption></figure>
+        <figure class="reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/prosti-3.jpg" alt="Прости меня, мама"></div><figcaption>Световое состояние</figcaption></figure>
       </div>
     </div>
     <div class="case-end"><div class="case-note">Сценография · пространство моста и среды под ним</div><div class="case-note">Премьера 14.10.2021</div></div>
@@ -708,8 +752,6 @@ figcaption{
     <div class="sch-grid">
       <figure class="project reveal"><div class="panel"><img class="zoom" loading="lazy" src="images/schastie-sketch.jpg" alt="Эскиз Счастье моё"></div><figcaption>Проект / основная сцена</figcaption></figure>
       <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/schastie-1.jpg" alt="Счастье моё"></div><figcaption>Реализация</figcaption></figure>
-      <figure class="project reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/schastie-costume.jpg" alt="Костюмный эскиз Счастье моё"></div><figcaption>Костюм / эскиз</figcaption></figure>
-      <figure class="project reveal" data-delay="3"><div class="panel"><img class="zoom" loading="lazy" src="images/schastie-costume2.jpg" alt="Костюмный эскиз Счастье моё"></div><figcaption>Костюм / персонаж</figcaption></figure>
       <figure class="reveal" data-delay="1"><div class="panel"><img class="zoom" loading="lazy" src="images/schastie-2.jpg" alt="Счастье моё"></div><figcaption>Предметная среда</figcaption></figure>
       <figure class="reveal" data-delay="2"><div class="panel"><img class="zoom" loading="lazy" src="images/schastie-3.jpg" alt="Счастье моё"></div><figcaption>Пространство и актёры</figcaption></figure>
     </div>
